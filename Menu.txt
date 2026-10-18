@@ -14,3 +14,4 @@ Salad
 1.50
 2.50
 3.00
+Checkout

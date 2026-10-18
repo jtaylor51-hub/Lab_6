@@ -1,0 +1,18 @@
+
+----Receipt----
+Customer: Jude
+
+Item                               Qty        Unit  Line Total
+
+Subtotal:       $24
+Discount:       $0
+Taxable Amount: $24
+
+Taxes:
+Tax Name                          Rate        Amount
+Arkansas State Tax                6.5%            $1.56
+Faulkner County Tax               0.5%            $0.12
+Conway Municipal Tax            2.125%            $0.51
+Total Tax                                         $2.19
+
+Total (Subtotal - Discount + Tax): $26.19
