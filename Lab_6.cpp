@@ -5,6 +5,7 @@
 #include <vector>
 #include <sstream>
 #include <limits>
+#include <fstream>
 using namespace std;
 
 int main()
@@ -37,12 +38,29 @@ int main()
         while (true) {
             cout << "\nPlease select from the following options:" << endl
                 << "Food Item " << setw(20) << "Small (s)" << setw(15) << "Medium (m)" << setw(15) << "Large (l)" << endl
-                << "--------------------------------------------------------" << endl
-                << "A. Cheese pizza" << setw(11) << "$2.50" << setw(14) << "$4.50" << setw(16) << "$6.00" << endl
-                << "B. Pepperoni pizza" << setw(8) << "$3.00" << setw(14) << "$5.00" << setw(16) << "$6.50" << endl
-                << "C. Turkey Sandwich" << setw(8) << "$2.00" << setw(14) << "$3.50" << setw(16) << "$4.50" << endl
-                << "D. Salad" << setw(18) << "$1.50" << setw(14) << "$2.50" << setw(16) << "$3.00" << endl
-                << "E. Checkout" << endl;
+                << "--------------------------------------------------------" << endl;
+            string food1, food2, food3, food4;
+            ifstream inputfile;
+            inputfile.open("Menu.txt");
+            double food1Small, food1Medium, food1Large, food2Small, food2Medium, food2Large, food3Small, food3Medium, food3Large, food4Small, food4Medium, food4Large;
+
+
+            inputfile >> food1 >> food1Small >> food1Medium >> food1Large;
+			inputfile >> food2 >> food2Small >> food2Medium >> food2Large;
+			inputfile >> food3 >> food3Small >> food3Medium >> food3Large;
+			inputfile >> food4 >> food4Small >> food4Medium >> food4Large;
+            inputfile.close();
+
+            cout << "A. " << food1 << setw(11) << "$" << food1Small << setw(14) << "$" << food1Medium << setw(16) << "$" << food1Large << endl;
+            cout << "B. " << food2 << setw(8) << "$" << food2Small << setw(14) << "$" << food2Medium << setw(16) << "$" << food2Large << endl;
+            cout << "C. " << food3 << setw(8) << "$" << food3Small << setw(14) << "$" << food3Medium << setw(16) << "$" << food3Large << endl;
+            cout << "D. " << food4 << setw(18) << "$" << food4Small << setw(14) << "$" << food4Medium << setw(16) << "$" << food4Large << endl;
+
+                //<< "A. Cheese pizza" << setw(11) << "$2.50" << setw(14) << "$4.50" << setw(16) << "$6.00" << endl
+                //<< "B. Pepperoni pizza" << setw(8) << "$3.00" << setw(14) << "$5.00" << setw(16) << "$6.50" << endl
+                //<< "C. Turkey Sandwich" << setw(8) << "$2.00" << setw(14) << "$3.50" << setw(16) << "$4.50" << endl
+                //<< "D. Salad" << setw(18) << "$1.50" << setw(14) << "$2.50" << setw(16) << "$3.00" << endl
+                //<< "E. Checkout" << endl;
 
             char choice;
             cout << "Enter choice (A-E): ";

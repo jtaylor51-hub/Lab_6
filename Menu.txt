@@ -1,0 +1,16 @@
+Cheese Pizza
+2.50
+4.50
+6.00
+Pepperoni Pizza
+3.00
+5.00
+6.50
+Turkey Sandwich
+2.00
+3.50
+4.50
+Salad
+1.50
+2.50
+3.00
